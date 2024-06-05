@@ -1,0 +1,50 @@
+﻿<Window x:Class="Assignment.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Assignment"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+
+        <Label x:Name="lblId" Content="ID" HorizontalAlignment="Left" Margin="78,52,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="78,78,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="cmbGender" HorizontalAlignment="Left" Margin="167,100,0,0" VerticalAlignment="Top" Width="88">
+            <ComboBoxItem Content="Male" IsSelected="True"/>
+            <ComboBoxItem Content="Female"/>
+        </ComboBox>
+        <TextBox x:Name="txtId" HorizontalAlignment="Left" Margin="167,60,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="167,78,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblSemester" Content="Semester" HorizontalAlignment="Left" Margin="78,126,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblWishList" Content="WishList" HorizontalAlignment="Left" Margin="78,152,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="245,270,0,0" VerticalAlignment="Top" Click="btnSubmit_Click"/>
+        <Label x:Name="lblDisplay" Content="ID: &#xA;Name: &#xA;Gender: &#xA;Semester: &#xA;Wishlist: " HorizontalAlignment="Left" Margin="379,60,0,0" VerticalAlignment="Top" Height="173" Width="401"/>
+        <ComboBox x:Name="cmbSemester" HorizontalAlignment="Left" Margin="167,130,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="cmbSemester_SelectionChanged">
+            <ComboBoxItem Content="Semester 1"/>
+            <ComboBoxItem Content="Semester 2"/>
+            <ComboBoxItem Content="Semester 3"/>
+            <ComboBoxItem Content="Semester 4"/>
+            <ComboBoxItem Content="Semester 5"/>
+            <ComboBoxItem Content="Semester 6"/>
+            <ComboBoxItem Content="Semester 7"/>
+            <ComboBoxItem Content="Semester 8"/>
+            <ComboBoxItem Content="Semester 9"/>
+        </ComboBox>
+        <!--<CheckBox Name="cbWishList1" Content="MAE101" HorizontalAlignment="Left" Margin="167,158,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbWishList2" Content="CSI104" HorizontalAlignment="Left" Margin="167,173,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbWishList3" Content="CEA201" HorizontalAlignment="Left" Margin="167,188,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbWishList4" Content="PRF192" HorizontalAlignment="Left" Margin="167,203,0,0" VerticalAlignment="Top"/>
+        <CheckBox Name="cbWishList5" Content="SSL101c" HorizontalAlignment="Left" Margin="167,218,0,0" VerticalAlignment="Top"/>-->
+
+        <StackPanel x:Name="pnlCourses" Margin="132,157,513,175">
+            
+        </StackPanel>
+
+
+        <Label Content="Gender" HorizontalAlignment="Left" Margin="78,100,0,0" VerticalAlignment="Top"/>
+
+
+    </Grid>
+
+</Window>
